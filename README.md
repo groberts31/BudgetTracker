@@ -1,5 +1,7 @@
 # BudgetTracker
 
+![command line example](./public/assets/images/budgetimg.png)
+
 
 ## User Story
 
