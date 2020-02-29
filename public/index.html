@@ -51,5 +51,12 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="/db.js"></script>
     <script src="/index.js"></script>
+    <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./service-worker.js", { scope: "/" })
+        .then(() => console.log("Service worker working"))
+        .catch(error => console.log("Service worker failed", error));
+    };       
+  </script>
   </body>
 </html>
